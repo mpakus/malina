@@ -1,0 +1,32 @@
+<h1>E-mails</h1>
+
+<p class="malina-clear-button">
+  <%= button_to 'Clear all', malina.malina_email_path(1), method: :delete %>
+</p>
+
+<table class="malina-table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>When</th>
+      <th>From</th>
+      <th>To</th>
+      <th>Subject</th>
+      <th>CC</th>
+      <th>BCC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% emails.each do |email| %>
+      <tr>
+        <td><%= link_to email.id, malina.malina_email_path(email) %></td>
+        <td><%= l email.created_at %></td>
+        <td><%= link_to email.subject, malina.malina_email_path(email) %></td>
+        <td><%= prepare email.from %></td>
+        <td><%= prepare email.to %></td>
+        <td><%= prepare email.cc %></td>
+        <td><%= prepare email.bcc %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

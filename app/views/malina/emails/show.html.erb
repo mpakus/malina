@@ -1,0 +1,13 @@
+<h1>E-mail</h1>
+
+<p class="malina-back-button">
+  <%= link_to '<< Back', malina.malina_emails_path %>
+</p>
+
+<div class="malina-email">
+  <h3>Subject: <%= email.subject %></h3>
+  <h4>From: <%= prepare email.from %></h4>
+  <h4>To: <%= prepare email.to %></h4>
+  <hr>
+  <iframe class="malina-email-body" seamless="seamless" srcdoc="<%= email.body %>" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';"></iframe>
+</div>
