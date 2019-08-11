@@ -14,3 +14,8 @@ gemspec
 
 # To use a debugger
 # gem 'byebug', group: [:development, :test]
+gem 'sqlite3'
+
+group :test do
+  gem 'rspec_junit_formatter'
+end
