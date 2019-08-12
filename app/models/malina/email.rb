@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
-class Malina::Email < ApplicationRecord
+class Malina::Email < ActiveRecord::Base
+  self.table_name = 'malina_emails'
+
   scope :ordered, -> { order(created_at: :desc) }
 end
 # == Schema Information

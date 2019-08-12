@@ -1,6 +1,16 @@
 # frozen_string_literal: true
 
 ActiveRecord::Schema.define do
-  # Set up any tables you need to exist for your test suite that don't belong
-  # in migrations.
+  self.verbose = false
+
+  create_table :malina_emails, force: true do |t|
+    t.string :subject
+    t.string :to, index: true
+    t.string :from, index: true
+    t.string :cc
+    t.string :bcc
+    t.text :body
+
+    t.timestamps
+  end
 end

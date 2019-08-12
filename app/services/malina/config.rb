@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Malina::Config
-  @layout = 'application'
+  @layout = 'malina'
 
   class << self
     attr_accessor :layout
