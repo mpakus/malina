@@ -1,11 +1,12 @@
 # frozen_string_literal: true
 
 require 'rubygems'
-require 'bundler/setup'
+require 'bundler'
+# require 'rails'
+require 'combustion'
 
 # ENV['RAILS_ENV'] ||= 'test'
-
-require 'combustion'
+# Bundler.require :default, :test
 
 Combustion.initialize! :all
 
