@@ -28,6 +28,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'rails', '~> 5.0.7', '>= 5.0.7.2'
 
   s.add_development_dependency 'combustion', '~> 1.1'
+  s.add_development_dependency 'rails-controller-testing'
   s.add_development_dependency 'rake', '~> 10.0'
   s.add_development_dependency 'rspec', '~> 3.0'
   s.add_development_dependency 'rspec-rails'

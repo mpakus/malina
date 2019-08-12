@@ -2,9 +2,7 @@
 
 RSpec.describe Malina::EmailInterceptor do
   describe '.delivering_email' do
-    MailStruct = Struct.new(:from, :to, :subject, :cc, :bcc, :body)
-
-    let!(:email) { MailStruct.new('from@mail.com', 'to@mail.com', 'Subject text', 'cc@mail.com', 'bcc@mail.com', 'Body text') }
+    let!(:email) { OpenStruct.new(from: 'from@mail.com', to: 'to@mail.com', subject: 'Subject text', cc: 'cc@mail.com', bcc: 'bcc@mail.com', body: 'Body text') }
     let(:malina_email) { Malina::Email.last }
 
     before { described_class.delivering_email(email) }
