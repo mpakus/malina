@@ -17,4 +17,5 @@ gemspec
 
 group :test do
   gem 'rspec_junit_formatter'
+  gem 'rails-controller-testing'
 end

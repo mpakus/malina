@@ -1,5 +1,7 @@
 # Malina
-Short description and motivation.
+[![CircleCI](https://circleci.com/gh/mpakus/malina.svg?style=svg)](https://circleci.com/gh/mpakus/malina)
+
+Interface for browsing sent emails.
 
 ## Usage
 How to use my plugin.
@@ -8,7 +10,7 @@ How to use my plugin.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'malina'
+gem 'malina', group: :development
 ```
 
 And then execute:
