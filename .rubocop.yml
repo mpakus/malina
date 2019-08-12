@@ -1,0 +1,6 @@
+Metrics/LineLength:
+  Max: 120
+Metrics/BlockLength:
+  ExcludedMethods: ['describe', 'context']
+AllCops:
+  TargetRubyVersion: 2.3

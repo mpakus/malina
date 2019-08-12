@@ -24,4 +24,4 @@ end
 #  index_malina_emails_on_from  (from)
 #  index_malina_emails_on_to    (to)
 #
-# rubocop:enable Metrics/LineLength, Lint/UnneededDisable
+

@@ -24,6 +24,7 @@ class Malina::EmailsController < ApplicationController
   # @return [String]
   def prepare(emails = nil)
     return '' unless emails
+
     JSON.parse(emails)&.join(', ')
   end
 

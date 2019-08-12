@@ -12,23 +12,22 @@ Gem::Specification.new do |s|
   s.authors     = ['Renat "MpaK" Ibragimov']
   s.email       = ['mrak69@gmail.com']
   s.homepage    = 'https://github.com/mpakus/malina'
-  s.summary     = 'Malina E-mails Rails Engine'
-  s.description = 'an interface for browsing sent emails.'
+  s.summary     = 'Malina E-mails UI as Rails Engine'
+  s.description = 'Interface for browsing sent emails.'
   s.license     = 'MIT'
 
   s.metadata = {
-    'changelog_uri'     => 'https://github.com/mpakus/malina/blob/master/CHANGELOG.md',
+    'changelog_uri' => 'https://github.com/mpakus/malina/blob/master/CHANGELOG.md',
     'documentation_uri' => 'https://github.com/mpakus/malina',
-    'homepage_uri'      => 'https://github.com/mpakus/malina',
-    'source_code_uri'   => 'https://github.com/mpakus/malina'
+    'homepage_uri' => 'https://github.com/mpakus/malina',
+    'source_code_uri' => 'https://github.com/mpakus/malina'
   }
 
   s.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
 
-  s.add_dependency 'rails', '~> 5.0.7', '>= 5.0.7.2'
+  s.add_dependency 'rails', '>=5.0', '<=6.0'
 
   s.add_development_dependency 'combustion', '~> 1.1'
-  s.add_development_dependency 'rails-controller-testing'
   s.add_development_dependency 'rake', '~> 10.0'
   s.add_development_dependency 'rspec', '~> 3.0'
   s.add_development_dependency 'rspec-rails'
